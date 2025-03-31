@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: database
+  namespace: amrit
   labels:
     app: database
 spec:
@@ -31,6 +32,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: database-service
+  namespace: amrit
 spec:
   selector:
     app: database
