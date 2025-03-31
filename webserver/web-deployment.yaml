@@ -32,7 +32,7 @@ metadata:
   name: web-service
   namespace: amrit
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: web-server
   ports:
