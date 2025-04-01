@@ -28,6 +28,6 @@ spec:
     spec:
       accessModes: [ "ReadWriteOnce" ]
       storageClassName: standard  # ← Add this for local clusters
-      resources:
-        requests:
-          storage: 1Gi
+    resources:
+      requests:
+        storage: 1Gi
