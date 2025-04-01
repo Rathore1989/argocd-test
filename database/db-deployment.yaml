@@ -1,12 +1,12 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: database
   namespace: amrit
   labels:
     app: database
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: database
